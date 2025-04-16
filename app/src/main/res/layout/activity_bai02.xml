@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".Bai02"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#000000"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="10"
+        android:layout_marginTop="20dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txtExpression"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textSize="25sp"
+            android:textColor="#E9E4E4"
+            android:gravity="end"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true">
+
+        <Button android:text="AC" style="@style/CalcButtonDarkPink"/>
+        <Button android:text="±" style="@style/CalcButtonDarkPink"/>
+        <Button android:text="%" style="@style/CalcButtonDarkPink"/>
+        <Button android:text="÷" style="@style/CalcButtonPink"/>
+
+        <Button android:text="7" style="@style/CalcButtonLightPink"/>
+        <Button android:text="8" style="@style/CalcButtonLightPink"/>
+        <Button android:text="9" style="@style/CalcButtonLightPink"/>
+        <Button android:text="×" style="@style/CalcButtonPink"/>
+
+        <Button android:text="4" style="@style/CalcButtonLightPink"/>
+        <Button android:text="5" style="@style/CalcButtonLightPink"/>
+        <Button android:text="6" style="@style/CalcButtonLightPink"/>
+        <Button android:text="−" style="@style/CalcButtonPink"/>
+
+        <Button android:text="1" style="@style/CalcButtonLightPink"/>
+        <Button android:text="2" style="@style/CalcButtonLightPink"/>
+        <Button android:text="3" style="@style/CalcButtonLightPink"/>
+        <Button android:text="+" style="@style/CalcButtonPink"/>
+
+        <Button android:text="0" style="@style/CalcButtonLightPink" android:layout_columnSpan="1"/>
+        <Button android:text="," style="@style/CalcButtonLightPink"/>
+        <Button android:text="del" style="@style/CalcButtonLightPink"/>
+        <Button android:text="=" style="@style/CalcButtonPink"/>
+
+    </GridLayout>
+</LinearLayout>
