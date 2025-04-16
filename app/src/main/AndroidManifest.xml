@@ -13,8 +13,7 @@
         android:theme="@style/Theme.NT118P21_22520047_BaiTapLab03"
         tools:targetApi="31">
 
-        <!-- Sửa lại Bai01 là activity khởi động chính -->
-        <activity android:name=".Bai01" android:exported="true">
+        <activity android:name=".Bai02" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +21,7 @@
         </activity>
 
         <activity android:name=".Bai01_2" android:exported="false" />
-        <activity android:name=".Bai02" android:exported="true" />
+        <activity android:name=".Bai01" android:exported="true" />
         <activity android:name=".MainActivity" android:exported="false" />
 
     </application>
