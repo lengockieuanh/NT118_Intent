@@ -85,7 +85,7 @@ public class Bai02 extends AppCompatActivity {
             String result = evaluator.evaluate(expression.toString());
             txtResult.setText(result.replace('.', ','));
         } catch (Exception e) {
-            txtResult.setText("Lỗi");
+            txtResult.setText("Error");
         }
     }
 }
